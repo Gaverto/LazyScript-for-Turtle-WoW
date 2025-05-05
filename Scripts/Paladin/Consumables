@@ -1,0 +1,4 @@
+--HP AND MP POTIONS--
+use=13446-ifInCombat-if>1750hpDeficit
+use=13444-ifInCombat-if>2250manaDeficit
+use=61675-ifInCombat-if>1350manaDeficit
