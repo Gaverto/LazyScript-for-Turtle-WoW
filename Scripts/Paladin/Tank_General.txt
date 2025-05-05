@@ -32,7 +32,7 @@ holyWrath-ifHasBuffTitle=Focus-ifTargetType=Demon,Undead
 holyShield-ifNotHasBuff=holyShield
 holyStrike-ifCooldown>0.5s=holyShield
 consecrate-ifCooldown>0.1s=holyShield-ifInCombat-ifTargetInMeleeRange
-action=QH-ifHasBuffTitle=Focus
+action=QH*-ifHasBuffTitle=Focus
 callForm=Utility
 --
 
