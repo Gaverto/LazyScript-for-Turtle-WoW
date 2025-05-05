@@ -1,4 +1,12 @@
 --
+--MISCELLANEOUS
+--
+hor-ifInCombat-ifNotTargetOfTarget-ifTargetNPC
+rightFury-ifNotHasBuff=rightFury
+dismount-ifMounted
+callForm=Gear_Swap
+callForm=Consumables
+--
 --OPENER
 --
 sealWisdom-ifNotInCombat-ifNotHasBuff=sealWisdom
@@ -6,17 +14,15 @@ holyShield-ifNotInCombat-ifNotHasBuff=holyShield
 holyStrike-ifNotInCombat
 autoAttack
 --
---MISCELLANEOUS
---
-hor-ifInCombat-ifNotTargetOfTarget-ifTargetNPC
-rightFury-ifNotHasBuff=rightFury
-dismount-ifMounted
-callForm=Gear_Swap
---
 --SEALS AND JUDGEMENTS
 --
-sealRight-ifCooldown>1.5s=holyShield-ifTargetHasDebuff=judgeWisdom-ifNotHasBuff=sealRight
-sealWisdom-ifNotTargetHasDebuff=judgeWisdom-ifNotHasBuff=sealWisdom
+sealRight-ifCooldown>1.5s=consecrate,holyShield,holyStrike-ifTargetHasDebuff=judgeWisdom-ifNotHasBuff=sealRight
+sealRight-ifCooldown>1.5s=holyShield,holyStrike,consecrate-ifTargetHasDebuff=judgeWisdom-ifNotHasBuff=sealRight
+sealRight-ifCooldown>1.5s=holyStrike,consecrate,holyShield-ifTargetHasDebuff=judgeWisdom-ifNotHasBuff=sealRight
+sealWisdom-ifCooldown>1.5s=consecrate,holyShield,holyStrike-ifNotTargetHasDebuff=judgeWisdom-ifNotHasBuff=sealWisdom
+sealWisdom-ifCooldown>1.5s=holyShield,consecrate,holyStrike-ifNotTargetHasDebuff=judgeWisdom-ifNotHasBuff=sealWisdom
+sealWisdom-ifCooldown>1.5s=holyStrike,consecrate,holyShield-ifNotTargetHasDebuff=judgeWisdom-ifNotHasBuff=sealWisdom
+judge-ifCooldown>1.5s=holyStrike
 judge-ifCooldown>1.5s=holyStrike
 --
 --GENERAL ROTATION
@@ -25,8 +31,8 @@ hmrWrath-ifHasBuffTitle=Focus
 holyWrath-ifHasBuffTitle=Focus-ifTargetType=Demon,Undead
 holyShield-ifNotHasBuff=holyShield
 holyStrike-ifCooldown>0.5s=holyShield
-consecrate-ifCooldown>0.5s=holyShield-ifInCombat-ifTargetInMeleeRange
-action=QH-ifHasBuffTitle=Focus*
+consecrate-ifCooldown>0.1s=holyShield-ifInCombat-ifTargetInMeleeRange
+action=QH-ifHasBuffTitle=Focus
 callForm=Utility
 --
 
