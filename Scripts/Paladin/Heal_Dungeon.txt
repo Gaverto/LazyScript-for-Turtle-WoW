@@ -8,7 +8,7 @@ autoAttack
 --
 consecrate-ifShiftDown
 includeForm=Utility
-action=Hand-every1.0s
+action=Hand-every1.0s*
 action=QH2-every1.0s-ifNotInCooldown=holyShock
 action=QH-every1.0s
 --
@@ -32,5 +32,11 @@ MACRO 16777231 "QH2" Spell_Holy_SearingLight
 #showtooltip Holy Shock
 /qh mt hot
 /qh hot
+
+* - action=Hand tries to execute the following macro:
+#showtooltip Hand of Sacrifice
+/script if nil then CastSpellByName("Hand of Sacrifice"); end 
+/cast [nobuff:Hand of Sacrifice @focus] Hand of Sacrifice
+Roids Macros is neccesary for this to work.
 
 Make sure to remove the [*] symbol in order to make the script work properly.
