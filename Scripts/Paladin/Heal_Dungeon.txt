@@ -3,17 +3,19 @@ cancelBuff=rightFury-ifHasBuff=rightFury
 dismount-ifMounted
 targetNearest-ifInCombat-ifNotTargetInCombat
 callForm=Gear_Swap-ifGlobalCooldown
+callForm=Consumables
 autoAttack
 --
 consecrate-ifShiftDown
 includeForm=Utility
 action=Hand-every1.0s
-action=QH2-every1.0s-ifNotInCooldown=holyShock*
-action=QH-every1.0s*
+action=QH2-every1.0s-ifNotInCooldown=holyShock
+action=QH-every1.0s
 --
 sealWisdom-ifNotHasBuff=sealWisdom
 judge-ifNotTargetHasDebuff=judgeWisdom
 --
+crusaderStrike-ifInCooldown=holyShock
 holyStrike
 --
 
