@@ -1,0 +1,12 @@
+--
+cleanse@player-ifplayerIs=Diseased,Poisoned,Magicked-ifInRange=cleanse-ifNotLastAction=cleanse
+cleanse@party1-ifparty1Is=Diseased,Poisoned,Magicked-ifInRange=cleanse-ifNotLastAction=cleanse
+cleanse@party2-ifparty2Is=Diseased,Poisoned,Magicked-ifInRange=cleanse-ifNotLastAction=cleanse
+cleanse@party3-ifparty3Is=Diseased,Poisoned,Magicked-ifInRange=cleanse-ifNotLastAction=cleanse
+cleanse@party4-ifparty4Is=Diseased,Poisoned,Magicked-ifInRange=cleanse-ifNotLastAction=cleanse
+hof@player-ifInRange=hof-ifplayerIs=Immobile
+hof@party1-ifInRange=hof-ifparty1Is=Immobile
+hof@party2-ifInRange=hof-ifparty2Is=Immobile
+hof@party3-ifInRange=hof-ifparty3Is=Immobile
+hof@party4-ifInRange=hof-ifparty4Is=Immobile
+--

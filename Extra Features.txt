@@ -1,0 +1,23 @@
+GENERAL:
+The following criteria now follow a decimal format.
+Example: -every0.5s. Full numbers must be typed as 1.0, 2.0 etc.
+
+-everyXXs
+-if[Not]Cooldown{<,>}XXs={action1,action2,...}
+-if[Not]LastUsed>XXs=action
+-if[Not]Timer>XXs=action
+-if[Not]{Buff,Debuff}Duration{<,>}XXs={buff1,buff2,...} (player only) 
+-if[Not]{Buff,Debuff}TitleDuration{<,>}XXs={buffTitle1,buffTitle2,...} (player only) 
+-if[Not]ItemCooldown{<,>}XXs={item1,item2,...}
+-ifTimeToDeath{<,=,>}XXs
+
+Added -ifInMeleeRange to Paladin and Shamans
+The function will execute a skill if the target is within 5 yard range
+
+Added -ifSwinged to all classes
+The function will execute a skill immediatally after MH swing. 
+ST_SwingTimer addon is neccesary for this to work. 
+
+
+
+

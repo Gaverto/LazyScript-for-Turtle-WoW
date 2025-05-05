@@ -1,0 +1,34 @@
+--
+cancelBuff=rightFury-ifHasBuff=rightFury
+dismount-ifMounted
+targetNearest-ifInCombat-ifNotTargetInCombat
+callForm=Gear_Swap-ifGlobalCooldown
+autoAttack
+--
+consecrate-ifShiftDown
+includeForm=Utility
+action=Hand-every1.0s
+action=QH2-every1.0s-ifNotInCooldown=holyShock*
+action=QH-every1.0s*
+--
+sealWisdom-ifNotHasBuff=sealWisdom
+judge-ifNotTargetHasDebuff=judgeWisdom
+--
+holyStrike
+--
+
+* - These lines try to execute macro named QH.
+The macros in question invoke QuickHeal Commands
+or more specifically:
+
+MACRO 16777229 "QH" Spell_Holy_FlashHeal
+#showtooltip Flash of Light
+/qh mt
+/qh
+END
+MACRO 16777231 "QH2" Spell_Holy_SearingLight
+#showtooltip Holy Shock
+/qh mt hot
+/qh hot
+
+Make sure to remove the [*] symbol in order to make the script work properly.

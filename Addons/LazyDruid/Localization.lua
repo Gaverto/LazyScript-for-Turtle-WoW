@@ -1,0 +1,191 @@
+﻿lazyDruidLoad.metadata:updateRevisionFromKeyword("$Revision: 171 $")
+
+function lazyDruidLoad.LoadDruidLocalization(locale)
+
+	lazyDruidLocale.enUS.ACTION_TTS.bite               = "Ferocious Bite"
+	lazyDruidLocale.enUS.ACTION_TTS.berserk            = "Berserk"
+	lazyDruidLocale.enUS.ACTION_TTS.claw               = "Claw"
+	lazyDruidLocale.enUS.ACTION_TTS.cower              = "Cower"
+	lazyDruidLocale.enUS.ACTION_TTS.dash               = "Dash"
+	lazyDruidLocale.enUS.ACTION_TTS.pounce             = "Pounce"
+	lazyDruidLocale.enUS.ACTION_TTS.prowl              = "Prowl"
+	lazyDruidLocale.enUS.ACTION_TTS.rake               = "Rake"
+	lazyDruidLocale.enUS.ACTION_TTS.ravage             = "Ravage"
+	lazyDruidLocale.enUS.ACTION_TTS.rip                = "Rip"
+	lazyDruidLocale.enUS.ACTION_TTS.shred              = "Shred"
+	lazyDruidLocale.enUS.ACTION_TTS.tigersFury         = "Tiger's Fury"
+	lazyDruidLocale.enUS.ACTION_TTS.trackHumanoids     = "Track Humanoids"
+
+	lazyDruidLocale.enUS.ACTION_TTS.bash               = "Bash"
+	lazyDruidLocale.enUS.ACTION_TTS.challenge          = "Challenging Roar"
+	lazyDruidLocale.enUS.ACTION_TTS.charge             = "Feral Charge"
+	lazyDruidLocale.enUS.ACTION_TTS.demoralize         = "Demoralizing Roar"
+	lazyDruidLocale.enUS.ACTION_TTS.enrage             = "Enrage"
+	lazyDruidLocale.enUS.ACTION_TTS.frenziedRegen      = "Frenzied Regeneration"
+	lazyDruidLocale.enUS.ACTION_TTS.growl              = "Growl"
+	lazyDruidLocale.enUS.ACTION_TTS.maul               = "Maul"
+	lazyDruidLocale.enUS.ACTION_TTS.savageBite         = "Savage Bite"
+	lazyDruidLocale.enUS.ACTION_TTS.swipe              = "Swipe"
+
+	lazyDruidLocale.enUS.ACTION_TTS.abolishPoison      = "Abolish Poison"
+	lazyDruidLocale.enUS.ACTION_TTS.barkskin           = "Barkskin"
+	lazyDruidLocale.enUS.ACTION_TTS.barkskinFeral      = "Barkskin (Feral)"
+	lazyDruidLocale.enUS.ACTION_TTS.curePoison         = "Cure Poison"
+	lazyDruidLocale.enUS.ACTION_TTS.faerieFire         = "Faerie Fire"
+	lazyDruidLocale.enUS.ACTION_TTS.feralFire          = "Faerie Fire (Feral)"
+	lazyDruidLocale.enUS.ACTION_TTS.gotw               = "Gift of the Wild"
+	lazyDruidLocale.enUS.ACTION_TTS.grasp              = "Nature's Grasp"
+	lazyDruidLocale.enUS.ACTION_TTS.healingTouch       = "Healing Touch"
+	lazyDruidLocale.enUS.ACTION_TTS.hibernate          = "Hibernate"
+	lazyDruidLocale.enUS.ACTION_TTS.hurricane          = "Hurricane"
+	lazyDruidLocale.enUS.ACTION_TTS.innervate          = "Innervate"
+	lazyDruidLocale.enUS.ACTION_TTS.moonfire           = "Moonfire"
+	lazyDruidLocale.enUS.ACTION_TTS.motw               = "Mark of the Wild"
+	lazyDruidLocale.enUS.ACTION_TTS.ns                 = "Nature's Swiftness"
+	lazyDruidLocale.enUS.ACTION_TTS.ooc                = "Omen of Clarity"
+	lazyDruidLocale.enUS.ACTION_TTS.rebirth            = "Rebirth"
+	lazyDruidLocale.enUS.ACTION_TTS.regrowth           = "Regrowth"
+	lazyDruidLocale.enUS.ACTION_TTS.rejuv              = "Rejuvenation"
+	lazyDruidLocale.enUS.ACTION_TTS.removeCurse        = "Remove Curse"
+	lazyDruidLocale.enUS.ACTION_TTS.roots              = "Entangling Roots"
+	lazyDruidLocale.enUS.ACTION_TTS.soothe             = "Soothe Animal"
+	lazyDruidLocale.enUS.ACTION_TTS.starfire           = "Starfire"
+	lazyDruidLocale.enUS.ACTION_TTS.swarm              = "Insect Swarm"
+	lazyDruidLocale.enUS.ACTION_TTS.swiftmend          = "Swiftmend"
+	lazyDruidLocale.enUS.ACTION_TTS.teleMoonglade      = "Teleport: Moonglade"
+	lazyDruidLocale.enUS.ACTION_TTS.thorns             = "Thorns"
+	lazyDruidLocale.enUS.ACTION_TTS.tranquility        = "Tranquility"
+	lazyDruidLocale.enUS.ACTION_TTS.wrath              = "Wrath"
+
+	lazyDruidLocale.enUS.ACTION_TTS.bear               = "Bear Form"
+	lazyDruidLocale.enUS.ACTION_TTS.aquatic            = "Aquatic Form"
+	lazyDruidLocale.enUS.ACTION_TTS.cat                = "Cat Form"
+	lazyDruidLocale.enUS.ACTION_TTS.travel             = "Travel Form"
+	lazyDruidLocale.enUS.ACTION_TTS.moonkin            = "Moonkin Form"
+
+
+	lazyDruidLocale.enUS.BITE_HIT = "Your Ferocious Bite hits (.+) for (%d+)."
+	lazyDruidLocale.enUS.BITE_CRIT = "Your Ferocious Bite crits (.+) for (%d+).";
+
+	-- BiteTracking.lua
+	DRUID_YOU_DONT_HAVE_BITE = "You don't have ferocious bite yet."
+	DRUID_BITE_NOT_SUPPORTED = "Ferocious Bite tracking is not supported by your locale"
+	DRUID_RESET_BITE_STATS = "Reset Ferocious Bite stats."
+	DRUID_BITE_CANT_RECORD = "lazyDruid.biteComboPoints is nil or 0, can't record"
+	DRUID_BITE_OUTPUT_1 = "Ferocious Bite ("
+	DRUID_BITE_OUTPUT_2 = " cp): "
+	DRUID_BITE_OUTPUT_3 = " damage (optimal "
+	DRUID_BITE_OUTPUT_4 = " (cur/avg vs. optimal)"
+	DRUID_BITE_CAST_SPELL_HOOK = "CastSpellHook, I see you're using ferocious bite with "
+	DRUID_BITE_CPS = " cps"
+
+	-- LazyDruid.lua
+	DRUID_ADDON_LOADED = " loaded. Powered by "
+
+	-- ParseDruid.lua
+	DRUID_DEAD_IN = "IsLastChance: DEAD IN "
+	DRUID_SEC = "s"
+	DRUID_BITE_NOW = " BITE NOW"
+	DRUID_NOT_VALID_NUMBER = "That is not a valid number: "
+	DRUID_EARLY_BITE = "Early bite! Kill shot!"
+	DRUID_ONLY_WITH_BITE = "-ifKillShot only works with bite"
+	DRUID_BITE_LOOKUP_FILED = "strange, bite damage lookup failed"
+	DRUID_CALCULATE_BITE_DMG_1 = "Calculate Bite Dmg: Using the OBSERVED Bite ("
+	DRUID_CALCULATE_BITE_DMG_2 = "cp) damage of: "
+	DRUID_CMD_DESCRIPTION_1 = " resetBiteStats"
+	DRUID_CMD_DESCRIPTION_2 = " useBiteTracking"
+	DRUID_CMD_DESCRIPTION_3 = " trackBiteCrits"
+	DRUID_FEROCIOUS_BITE_NO_LONGER_USING = "No longer using Ferocious Bite tracking."
+	DRUID_FEROCIOUS_BITE_NOW_USING = "Now using Ferocious Bite tracking."
+	DRUID_FEROCIOUS_BITE_NO_LONGER_TRACKING = "No longer tracking Ferocious Bite crits."
+	DRUID_FEROCIOUS_BITE_NOW_TRACKING = "Now tracking Ferocious Bite crits."
+
+	DRUID_CUSTOM_MENU_FER_BITE_OPT = "< Ferocious Bite Options >"
+	DRUID_CUSTOM_MENU_FER_BITE_OPT_TITLE = "Ferocious Bite Options"
+	DRUID_CUSTOM_MENU_FER_BITE_OPT_INC_CRITS = "... Include Crits (may skew kill shots)"
+	DRUID_CUSTOM_MENU_FER_BITE_OPT_SAMPLE = "Ferocious Bite sample window:"
+	DRUID_CUSTOM_MENU_FER_BITE_OPT_SAMPLE_LAST = "... Last "
+	DRUID_CUSTOM_MENU_FER_BITE_OPT_SAMPLE_BITES = " Bites"
+	DRUID_CUSTOM_MENU_FER_BITE_OPT_STATS = "Ferocious Bite Stats"
+	DRUID_CUSTOM_MENU_FER_BITE_OPT_STATS_FORMAT = "Observed/Optimal => % (# seen)"
+	DRUID_CUSTOM_MENU_FER_BITE_OPT_STATS_OUTPUT_CP = "cp: "
+	DRUID_CUSTOM_MENU_FER_BITE_OPT_STATS_OUTPUT_SEEN = " seen)"
+	DRUID_CUSTOM_MENU_FER_BITE_RESET = "< Reset >"
+
+	function lazyDruid.CustomLocaleHelp()
+		return [[
+			<H2>Druid Criteria:</H2>
+			<P>-ifKillShot[=XX%] (for 'bite' action only)</P>
+			<P>-if[Not]LastChance[PlusX.Xs] |cffffff00(default is 0.25s)|r</P>
+		]]
+	end
+
+	if (locale == "zhCN") then
+
+		lazyDruidLocale.zhCN.ACTION_TTS.bite               = "凶猛撕咬"
+		lazyDruidLocale.zhCN.ACTION_TTS.berserk            = "狂暴"
+		lazyDruidLocale.zhCN.ACTION_TTS.claw               = "爪击"
+		lazyDruidLocale.zhCN.ACTION_TTS.cower              = "畏缩"
+		lazyDruidLocale.zhCN.ACTION_TTS.dash               = "急奔"
+		lazyDruidLocale.zhCN.ACTION_TTS.pounce             = "突袭"
+		lazyDruidLocale.zhCN.ACTION_TTS.prowl              = "潜行"
+		lazyDruidLocale.zhCN.ACTION_TTS.rake               = "扫击"
+		lazyDruidLocale.zhCN.ACTION_TTS.ravage             = "毁灭"
+		lazyDruidLocale.zhCN.ACTION_TTS.rip                = "撕扯"
+		lazyDruidLocale.zhCN.ACTION_TTS.shred              = "撕碎"
+		lazyDruidLocale.zhCN.ACTION_TTS.tigersFury         = "猛虎之怒"
+		lazyDruidLocale.zhCN.ACTION_TTS.trackHumanoids     = "追踪人型生物"
+
+		lazyDruidLocale.zhCN.ACTION_TTS.bash               = "重击"
+		lazyDruidLocale.zhCN.ACTION_TTS.challenge          = "挑战咆哮"
+		lazyDruidLocale.zhCN.ACTION_TTS.charge             = "野性冲锋"
+		lazyDruidLocale.zhCN.ACTION_TTS.demoralize         = "挫志咆哮"
+		lazyDruidLocale.zhCN.ACTION_TTS.enrage             = "狂怒"
+		lazyDruidLocale.zhCN.ACTION_TTS.frenziedRegen      = "狂暴回复"
+		lazyDruidLocale.zhCN.ACTION_TTS.growl              = "低吼"
+		lazyDruidLocale.zhCN.ACTION_TTS.maul               = "槌击"
+		lazyDruidLocale.zhCN.ACTION_TTS.savageBite         = "野蛮撕咬"
+		lazyDruidLocale.zhCN.ACTION_TTS.swipe              = "挥击"
+
+		lazyDruidLocale.zhCN.ACTION_TTS.abolishPoison      = "驱毒术"
+		lazyDruidLocale.zhCN.ACTION_TTS.barkskin           = "树皮术"
+		lazyDruidLocale.zhCN.ACTION_TTS.barkskinFeral      = "树皮术（野性）"
+		lazyDruidLocale.zhCN.ACTION_TTS.curePoison         = "消毒术"
+		lazyDruidLocale.zhCN.ACTION_TTS.faerieFire         = "精灵之火"
+		lazyDruidLocale.zhCN.ACTION_TTS.feralFire          = "精灵之火（野性）"
+		lazyDruidLocale.zhCN.ACTION_TTS.gotw               = "野性赐福"
+		lazyDruidLocale.zhCN.ACTION_TTS.grasp              = "自然之握"
+		lazyDruidLocale.zhCN.ACTION_TTS.healingTouch       = "治疗之触"
+		lazyDruidLocale.zhCN.ACTION_TTS.hibernate          = "休眠"
+		lazyDruidLocale.zhCN.ACTION_TTS.hurricane          = "飓风"
+		lazyDruidLocale.zhCN.ACTION_TTS.innervate          = "激活"
+		lazyDruidLocale.zhCN.ACTION_TTS.moonfire           = "月火术"
+		lazyDruidLocale.zhCN.ACTION_TTS.motw               = "野性印记"
+		lazyDruidLocale.zhCN.ACTION_TTS.ns                 = "自然迅捷"
+		lazyDruidLocale.zhCN.ACTION_TTS.ooc                = "清晰预兆"
+		lazyDruidLocale.zhCN.ACTION_TTS.rebirth            = "复生"
+		lazyDruidLocale.zhCN.ACTION_TTS.regrowth           = "愈合"
+		lazyDruidLocale.zhCN.ACTION_TTS.rejuv              = "回春术"
+		lazyDruidLocale.zhCN.ACTION_TTS.removeCurse        = "解除诅咒"
+		lazyDruidLocale.zhCN.ACTION_TTS.roots              = "纠缠根须"
+		lazyDruidLocale.zhCN.ACTION_TTS.soothe             = "安抚动物"
+		lazyDruidLocale.zhCN.ACTION_TTS.starfire           = "星火术"
+		lazyDruidLocale.zhCN.ACTION_TTS.swarm              = "虫群"
+		lazyDruidLocale.zhCN.ACTION_TTS.swiftmend          = "迅捷治愈"
+		lazyDruidLocale.zhCN.ACTION_TTS.teleMoonglade      = "传送：月光林地"
+		lazyDruidLocale.zhCN.ACTION_TTS.thorns             = "荆棘术"
+		lazyDruidLocale.zhCN.ACTION_TTS.tranquility        = "宁静"
+		lazyDruidLocale.zhCN.ACTION_TTS.wrath              = "愤怒"
+
+		lazyDruidLocale.zhCN.ACTION_TTS.bear               = "熊形态"
+		lazyDruidLocale.zhCN.ACTION_TTS.aquatic            = "水栖形态"
+		lazyDruidLocale.zhCN.ACTION_TTS.cat                = "猎豹形态"
+		lazyDruidLocale.zhCN.ACTION_TTS.travel             = "旅行形态"
+		lazyDruidLocale.zhCN.ACTION_TTS.moonkin            = "枭兽形态"
+
+
+		lazyDruidLocale.zhCN.BITE_HIT = "你的凶猛撕咬击中(.+)造成(%d+)点伤害。"
+		lazyDruidLocale.zhCN.BITE_CRIT = "你的凶猛撕咬击对(.+)造成(%d+)的致命一击伤害。";
+
+	end
+end

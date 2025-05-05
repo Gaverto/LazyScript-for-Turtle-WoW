@@ -1,0 +1,17 @@
+﻿## Interface: 11200
+## Title: LazyScript - |cffff770CLazy|r|cffffffffWarlock|r
+## Title-zhCN: 懒人神器 - |cff8686EC术士一键畅玩|r
+## Version: 1.0-alpha18
+## X-Revision: $Revision: 747 $
+## X-LazyScriptCompatibility: 3
+## Notes: Programmable Warlock Attacks.
+## Notes-zhCN: 编写你的个性脚本 - |cff8686EC术士一键畅玩|r
+## RequiredDeps: LazyScript
+## OptionalDeps: MobInfo-2, Tracer, BonusScanner
+## LoadOnDemand: 1
+## X-LazyScriptVersion: 1.0
+
+LazyWarlock.lua
+ParseWarlock.lua
+Localization.lua
+LazyWarlock.xml

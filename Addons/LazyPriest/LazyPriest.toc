@@ -1,0 +1,17 @@
+﻿## Interface: 11200
+## Title: LazyScript - |cffff770CLazy|r|cffffffffPriest|r
+## Title-zhCN: 懒人神器 - |cfffefefe牧师一键畅玩|r
+## Version: 1.0.2
+## X-Revision: $Revision: 747 $
+## X-LazyScriptCompatibility: 3
+## Notes: Programmable Priest Attacks.
+## Notes-zhCN: 编写你的个性脚本 - |cfffefefe牧师一键畅玩|r
+## RequiredDeps: LazyScript
+## OptionalDeps: MobInfo-2, Tracer
+## LoadOnDemand: 1
+## X-LazyScriptVersion: 1.0
+
+LazyPriest.lua
+ParsePriest.lua
+Localization.lua
+LazyPriest.xml

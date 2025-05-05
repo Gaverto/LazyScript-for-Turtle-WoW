@@ -1,0 +1,12 @@
+--
+equipMainHand=2243-ifGotTalent=Bulwark of the Righteous-ifTargetImmune=Dream's Herald
+equipMainHand=2243-ifGotTalent=Bulwark of the Righteous-ifTargetHasDebuffTitle=Dream's Herald
+equipMainHand=65008-ifGotTalent=Bulwark of the Righteous-ifNotTargetImmune=Dream's Herald-ifNotTargetHasDebuffTitle=Dream's Herald
+--
+equipOffHand=18168-ifGotTalent=Bulwark of the Righteous-ifNotTargetImmune=Force Reactive Disk
+equipOffHand=13375-ifGotTalent=Bulwark of the Righteous-ifTargetImmune=Force Reactive Disk-ifPlayerHasBuffTitle=Argent Dawn,Redoubt,Holy Shield
+equipOffHand=13243-ifGotTalent=Bulwark of the Righteous-ifTargetImmune=Force Reactive Disk-ifNotPlayerHasBuffTitle=Argent Dawn,Redoubt,Holy Shield
+--
+equipMainHand=2243-ifGotTalent=Daybreak-ifPlayer>75%mana
+equipMainHand=81018-ifGotTalent=Daybreak-ifPlayer<50%mana
+--

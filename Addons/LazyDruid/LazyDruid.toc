@@ -1,0 +1,23 @@
+﻿## Interface: 11200
+## Title: LazyScript - |cffff770CLazy|r|cffffffffDruid|r
+## Title-zhCN: 懒人神器 - |cffFE7B09德鲁伊一键畅玩|r
+## Version: 1.0.2
+## X-Revision: $Revision: 747 $
+## X-LazyScriptCompatibility: 3
+## Notes: Programmable Druid Attacks.
+## Notes-zhCN: 编写你的个性脚本 - |cffFE7B09德鲁伊一键畅玩|r
+## RequiredDeps: LazyScript
+## OptionalDeps: MobInfo-2, Tracer
+## LoadOnDemand: 1
+## X-LazyScriptVersion: 1.0
+
+libs\AceLibrary\AceLibrary.lua
+libs\AceOO-2.0\AceOO-2.0.lua
+libs\AceEvent-2.0\AceEvent-2.0.lua
+libs\DruidManaLib-1.0\DruidManaLib-1.0.lua
+
+LazyDruid.lua
+ParseDruid.lua
+BiteTracking.lua
+Localization.lua
+LazyDruid.xml

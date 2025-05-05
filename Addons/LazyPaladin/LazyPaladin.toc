@@ -1,0 +1,17 @@
+﻿## Interface: 11200
+## Title: LazyScript - |cffff770CLazy|r|cffffffffPaladin|r
+## Title-zhCN: 懒人神器 - |cffF38BB9圣骑士一键畅玩|r
+## Version: 1.0-alpha18
+## X-Revision: $Revision: 747 $
+## X-LazyScriptCompatibility: 3
+## Notes: Programmable Paladin Attacks.
+## Notes-zhCN: 编写你的个性脚本 - |cffF38BB9圣骑士一键畅玩|r
+## RequiredDeps: LazyScript
+## OptionalDeps: MobInfo-2, Tracer
+## LoadOnDemand: 1
+## X-LazyScriptVersion: 1.0
+
+LazyPaladin.lua
+ParsePaladin.lua
+Localization.lua
+LazyPaladin.xml
