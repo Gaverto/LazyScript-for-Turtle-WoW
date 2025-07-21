@@ -26,7 +26,7 @@ Example: -every0.5s. Full numbers must be typed as 1.0, 2.0 etc.
 
 -ifTimeToDeath{<,=,>}XXs
 
-Added -ifInMeleeRange to Paladin and Shamans
+Added -ifTargetInMeleeRange to Paladin and Shamans
 
 The function will execute a skill if the target is within 5 yard range
 
