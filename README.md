@@ -26,7 +26,7 @@ Example: -every0.5s. Full numbers must be typed as 1.0, 2.0 etc.
 
 -ifTimeToDeath{<,=,>}XXs
 
-Added -ifTargetInMeleeRange to Paladin and Shamans
+Added -ifTargetInMeleeRange to Paladin and Shamans. Note: functions will not work if spells: Holy Strike and Storm Strike are not added to hotbars. This essentially means that Shamans need to spec into Ench tree in order to have access to this function =(
 
 The function will execute a skill if the target is within 5 yard range
 
