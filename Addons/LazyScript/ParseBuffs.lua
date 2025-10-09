@@ -676,7 +676,7 @@ end
 
 
 function lazyScript.bitParsers.ifBuffDuration(bit, actions, masks)
-	if (not lazyScript.rebit(bit, "^if(Not)?(Buff|Debuff)Duration([<>])(d%.%d+)s=(.+)$")) then
+	if (not lazyScript.rebit(bit, "^if(Not)?(Buff|Debuff)Duration([<>])(%d+%.?%d*)s=(.+)$")) then
 		return false
 	end
 	local negate = lazyScript.negate1()
@@ -1243,4 +1243,5 @@ function lazyScript.masks.FindBuffsByCategory(category)
 	end
 
 	return buffs
+
 end
