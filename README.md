@@ -37,10 +37,3 @@ The function will execute a skill immediatally after MH swing.
 ST_SwingTimer addon is neccesary for this to work. 
 
 https://github.com/balakethelock/SP_SwingTimer
-
-THIS DOES NOT WORK WITH SUPER WOW!
-
-As of 30/04/2025 this addon does not work with SuperWoW by balake due to changes being made to LUA functions by his .dll.
-It's possible it might change in the future if Turtle WoW will implement SuperWoW's features as baseline or if the man himself would be willing to accomidate this addon.
-
-PLEASE DO NOT BOTHER HIM ABOUT IT.
