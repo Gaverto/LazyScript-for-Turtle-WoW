@@ -3074,7 +3074,7 @@ function lazyScript.masks.TimeToDeath(gtLtEq, val)
 end
 
 function lazyScript.bitParsers.ifTimeToDeath(bit, actions, masks)
-	if (not lazyScript.rebit(bit, "^ifTimeToDeath([<=>])(%d.%d+)s$")) then
+	if (not lazyScript.rebit(bit, "^ifTimeToDeath([<=>])(%d*%.?%d+)s$")) then
 		return false
 	end
 	local gtLtEq = lazyScript.match1
@@ -3275,3 +3275,4 @@ function lazyScript.GetUnitIdFromFrame()
 	end
 	return nil
 end
+
